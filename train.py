@@ -117,13 +117,13 @@ def plot_history(history, title):
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4))
 
     ax1.plot(history['train_loss'], color='blue', label='train')
-    ax1.plot(history['val_loss'],   color='red',  label='val')
+    ax1.plot(history['val_loss'], color='red',  label='val')
     ax1.set_title(f'{title} - loss')
     ax1.set_xlabel('epoch')
     ax1.legend()
 
     ax2.plot(history['train_acc'], color='blue', label='train')
-    ax2.plot(history['val_acc'],   color='red',  label='val')
+    ax2.plot(history['val_acc'], color='red',  label='val')
     ax2.set_title(f'{title} - accuracy')
     ax2.set_xlabel('epoch')
     ax2.legend()

@@ -41,7 +41,7 @@ def build_labels(folder):
     labels.columns = ['filename', 'label']
 
     n_cavity = labels['label'].sum()
-    n_none   = (labels['label'] == 0).sum()
+    n_none = (labels['label'] == 0).sum()
     print(f'{os.path.basename(folder)}: {len(labels)} images | {n_cavity} cavity | {n_none} no cavity')
     return labels
 
