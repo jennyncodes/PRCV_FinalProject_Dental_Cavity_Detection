@@ -1,0 +1,16 @@
+# Editor config
+pyrightconfig.json
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# MNIST data (downloaded automatically)
+data/
+
+# OS files
+*.ini
+.DS_Store
+
+venv/
